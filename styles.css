@@ -16,12 +16,13 @@ body {
     margin: 0 auto;
     padding: 3rem 1.5rem;
 }
+    
 
 /*Lab 12 Task 1: header side by side */
 header {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.51rem;
     /*Lab 12 Task 4: let the header stack on smaller screens */
     flex-wrap: wrap;
 
