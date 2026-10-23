@@ -135,4 +135,23 @@ nav a:hover {
     margin-bottom: 2rem
  }
 
- 
+ /* <!--Class 14 *Step 2: the cards go in a row--> */
+.cards {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    flex: 1;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+/* Class 14* Step 3: a row when theres room */
+@media (min-width: 40rem){
+.cards {
+    flex-direction: row;
+}
+}
