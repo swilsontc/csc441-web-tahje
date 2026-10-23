@@ -1,0 +1,10 @@
+## Week 9, Wednesday
+1. What are your three pages, and why those three?
+*Index - The main homepage
+*Projects - Display my the projects I have done
+*Contact - I think it is important to have contact information
+2. You changed one thing in styles.css and all three pages changed.
+What would you have had to do if each page carried its own copy?
+*I think you would have to edit a css for each page
+3. What is one thing on your page you don't know how to change yet?
+*I think I know how to change everything

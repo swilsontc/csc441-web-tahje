@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
     padding: 3rem 1.5rem;
 }
-    
+
 
 /*Lab 12 Task 1: header side by side */
 header {
@@ -104,3 +104,35 @@ li {
     padding-left: 1rem;
     border-left: 2px solid var(--accent);
 }
+
+
+/* Class 13: Step 3: the nav bar  */
+nav a {
+    text-decoration: none;
+    font-weight: 700;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid transparent;
+}
+
+ /* Lab 13 * Task 5:hover */
+nav a:hover {
+    background: var(--panel); 
+    border-bottom-color: var(--accent);
+    padding-bottom: 1rem;
+
+}
+
+ /* <!-- Lab 13 * Task 1: which page am I on --> */
+ nav a.current {
+    border-bottom-color: var(--accent);
+    color: var(--accent);
+ }
+
+ /* Lab 13 * Task 4: separate the bar from the header */
+ nav {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem
+ }
+
+ 
