@@ -59,17 +59,22 @@ p {
 }
 
 /*Lab 12 Task 3: footer */
+/* Lab 14 * Task 4: footer stacks on narrow screens */
 footer {
-    margin-top: 4rem;
-    color: var(--text-muted);
-    font-size: 0.9rem;
+    display: flex;
+    flex-direciton: column;
+    gap: 0.5rem;
+    align-items: center;
     border-top: 1px solid var(--border);
     padding-top: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
+@media (min-width: 40rem) {
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 
 a {
     color: var(--accent);
@@ -107,6 +112,23 @@ li {
 
 
 /* Class 13: Step 3: the nav bar  */
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 40rem) {
+    nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+}
+
 nav a {
     text-decoration: none;
     font-weight: 700;
@@ -114,28 +136,28 @@ nav a {
     border-bottom: 2px solid transparent;
 }
 
- /* Lab 13 * Task 5:hover */
+/* Lab 13 * Task 5:hover */
 nav a:hover {
-    background: var(--panel); 
+    background: var(--panel);
     border-bottom-color: var(--accent);
     padding-bottom: 1rem;
 
 }
 
- /* <!-- Lab 13 * Task 1: which page am I on --> */
- nav a.current {
+/* <!-- Lab 13 * Task 1: which page am I on --> */
+nav a.current {
     border-bottom-color: var(--accent);
     color: var(--accent);
- }
+}
 
- /* Lab 13 * Task 4: separate the bar from the header */
- nav {
+/* Lab 13 * Task 4: separate the bar from the header */
+nav {
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--border);
     margin-bottom: 2rem
- }
+}
 
- /* <!--Class 14 *Step 2: the cards go in a row--> */
+/* <!--Class 14 *Step 2: the cards go in a row--> */
 .cards {
     display: flex;
     gap: 1.5rem;
@@ -149,9 +171,17 @@ nav a:hover {
     border: 1px solid var(--border);
     border-radius: 8px;
 }
+
 /* Class 14* Step 3: a row when theres room */
-@media (min-width: 40rem){
-.cards {
-    flex-direction: row;
+@media (min-width: 40rem) {
+    .cards {
+        flex-direction: row;
+    }
 }
+
+header {
+    min-height: 40vh;
+    display: flex;
+    flexdirection: column;
+    justify-content: center;
 }

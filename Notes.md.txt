@@ -8,3 +8,14 @@ What would you have had to do if each page carried its own copy?
 *I think you would have to edit a css for each page
 3. What is one thing on your page you don't know how to change yet?
 *I think I know how to change everything
+
+
+
+#### Week 9 Friday Lab
+1. I stuck with 40 because it seemed to work out.
+2. I couldnt find anything wrong even after changing it to 320px width
+3. justify content deals with horizontal alignment while align items deals with vertical but they can get mixed up depending on what value you put in it
+4. Because it uses mobile models
+
+
+
