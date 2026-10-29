@@ -62,7 +62,7 @@ p {
 /* Lab 14 * Task 4: footer stacks on narrow screens */
 footer {
     display: flex;
-    flex-direciton: column;
+    flex-direction: column;
     gap: 0.5rem;
     align-items: center;
     border-top: 1px solid var(--border);
@@ -182,7 +182,7 @@ nav {
 header {
     min-height: 40vh;
     display: flex;
-    flexdirection: column;
+    flex-direction: column;
     justify-content: center;
 }
 
