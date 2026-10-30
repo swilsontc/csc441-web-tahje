@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.8">
+    <!-- Class 16: Step 1: my contact page -->
+    <title>Contact - Tahje Wilson</title>
+    <!--- Class 12: Step 1: a typeface I chose-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/csc27family=Figtree:wght@400;700&display">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Class 15: Step 1: my third file -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+        <!-- Class 13: Step 2: navigation-->
+
+
+    <nav>
+                    <li><a href="index.html" >Home</li></a></li>
+
+        <ul>
+            <li><a href="projects.html" >Projects</li></a></li>
+            <li><a href="contact.html">Contact</li></a></li>
+            <li><a href="reading.html">Reading</a></li>
+            <!-- Class 16: Step 1: the contact link -->
+            <li><a href="contactt.html" class ="current">Contactt</a></li>
+            <!-- Class 15: Stpe 3: the theme button -->
+            <li><button id="theme-toggle" type="button">Dark</button></li>
+        </ul>
+    </nav>
+    <!--- CLass 11: Step 2: the page content -->
+
+    <!-- Lab 12 Task 1: group the text so it stacks beside the photo-->
+    <header>
+        <!-- Class 12: Step 3 an image-->
+         <img src="images/Tahje.png" alt="Portrait of Tahje Wilson" class="portrait">
+          <div class = "header-text">
+            <h1> Contact</h1>
+        <p>Questions about my experience or something else.</p>
+        </div>
+    </header>
+    <main>
+        <!-- Class 16: Step 2: a form -->
+         <form id="contact-form">
+            <p>
+                <label for="name">Your name</label>
+                <input id="name" name="name" type="text">
+            </p>
+
+            <p>
+                <label  for="email">Your Email</label>
+                <input id="email" name="email" type="email" required>
+            </p>
+            <p>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </p>
+            <p>
+                <button type="submit">Send</button>
+            </p>
+         </form>
+
+
+         <p>
+            <p id="form-status" role="status"></p>
+         </p>
+
+
+
+
+
+    </main>
+<!-- Lab 12 Task 3: two things in the footer-->
+    <footer>
+        <p>@ 2026 Tahje Wilson</p>
+        <a href="https://github.com/swilsontc" target="_blank" rel ="noopener">GitHub</a>
+
+        <!-- Class 15: Step 2: the year, written by JavaScript -->
+        <p>© <span id ="year"></spa> Tahje Wilson</p>
+    </footer>
+</body>
+        <section>
+            <h2>What I've built</h2>
+            <ul>
+                <li> An Android app in Kotlin and Jetpack Compose</li>
+            </ul>
+        </section>
+
+
+        <!-- Lab 11 Task 2: a third section-->
+<section>
+    <h2>Interests</h2>
+    <ul>
+        <li>Computer Science</li>
+        <li>Art and Design</li>
+        <li>Gaming</li>
+    </ul>
+</section>
+
+
+
+    </main>
+<!-- Lab 12 Task 3: two things in the footer-->
+    <footer>
+        <p>@ 2026 Tahje Wilson</p>
+        <a href="https://github.com/swilsontc" target="_blank" rel ="noopener">GitHub</a>
+    </footer>
+</body>
+</html>
