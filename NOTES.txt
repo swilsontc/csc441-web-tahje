@@ -6,3 +6,18 @@ Because javascripts tried to use something that wasnt on the page
 I made sure the message is at least 10 characters long
 
 the form is missing a backend
+## Week 8, Friday
+On a phone, the text was too big. I fixed it by reducing the size of the text in styles.css
+
+
+## Week 10, Wednesday Lab
+HTML: Deals with what you can see on the page
+CSS: Deals with the page's structure
+JavaScript: Deals with more interactive stuff in webpages like buttons
+
+Defer allows the button to activate, without it the button doesnt work
+
+We changed the property of specific things that affected the whole page. Without it we would have to write individual colors for each variable on the page.
+
+I believe I know how to change everything on the page, maybe not the indiviual underline colors.
+
