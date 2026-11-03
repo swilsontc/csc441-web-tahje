@@ -5,7 +5,7 @@ console.log("script.js is running");
 const yearSpan = document.querySelector("#year");
 
 if (yearSpan) {
-    yearSpan.textContent = new Date().getFullYear;
+    yearSpan.textContent = new Date().getFullYear();
 }
 
 // Class 15: Step 3: a button that changes the page
