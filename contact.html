@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/csc27family=Figtree:wght@400;700&display">
     <link rel="stylesheet" href="styles.css">
-
+<!-- Lab 15 Task 1: my third file -->
+<script src = "script.js" defer></script>
 </head>
 
 <body>
@@ -19,11 +20,11 @@
 
     <nav>
         <ul>
-            <li><a href="index.html" class="current">Home</li></a></li>
+            <li><a href="index.html">Home</li></a></li>
             <li><a href="projects.html">Projects</li></a></li>
-            <li><a href="contact.html">Contact</li></a></li>
+            <li><a href="contact.html" class="current">Contact</li></a></li>
             <li><a href="reading.html">Reading</a></li>
-
+            <li><button id="theme-toggle" type="button">Dark</button></li>
         </ul>
     </nav>
     <!--- CLass 11: Step 2: the page content -->
@@ -61,7 +62,7 @@
     </main>
 <!-- Lab 12 Task 3: two things in the footer-->
     <footer>
-        <p>@ 2026 Tahje Wilson</p>
+        <p>&copy; <span id="year"></span> Tahje Wilson</p>
         <a href="https://github.com/swilsontc" target="_blank" rel ="noopener">GitHub</a>
     </footer>
 </body>
