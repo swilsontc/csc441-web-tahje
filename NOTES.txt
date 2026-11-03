@@ -1,0 +1,8 @@
+##Week 10, Friday
+Stops the page from reloading
+
+Because javascripts tried to use something that wasnt on the page
+
+I made sure the message is at least 10 characters long
+
+the form is missing a backend
