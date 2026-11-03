@@ -59,17 +59,22 @@ p {
 }
 
 /*Lab 12 Task 3: footer */
+/* Lab 14 * Task 4: footer stacks on narrow screens */
 footer {
-    margin-top: 4rem;
-    color: var(--text-muted);
-    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
     border-top: 1px solid var(--border);
     padding-top: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
+@media (min-width: 40rem) {
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 
 a {
     color: var(--accent);
@@ -107,6 +112,23 @@ li {
 
 
 /* Class 13: Step 3: the nav bar  */
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 40rem) {
+    nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+}
+
 nav a {
     text-decoration: none;
     font-weight: 700;
