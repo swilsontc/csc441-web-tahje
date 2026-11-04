@@ -1,10 +1,17 @@
-/* Class 11 · Step 4: the basics */
+/* Class 16: Step 3: Padding counts inside with not on top of it */
+* {
+    box-sizing: border-box;
+}
+
+/* Class 11  Step 4: the basics */
 :root {
     --text: #1a1a1a;
     --text-muted: #6b7280;
     --accent: #2563eb;
     --background: #ffffff;
     --border: #e5e7eb;
+    /* Lab 16  Task 1: Error color variable for light mode */
+    --error: crimson;
 }
 
 body {
@@ -17,20 +24,21 @@ body {
     padding: 3rem 1.5rem;
 }
 
-
-/*Lab 12 Task 1: header side by side */
+/* Lab 12 Task 1: header side by side */
 header {
     display: flex;
     align-items: center;
     gap: 1.51rem;
-    /*Lab 12 Task 4: let the header stack on smaller screens */
+    min-height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    /* Lab 12 Task 4: let the header stack on smaller screens */
     flex-wrap: wrap;
-
 }
 
 h1 {
     font-size: 3rem;
-    /*Class 12: Step 2: my own scale */
+    /* Class 12: Step 2: my own scale */
     line-height: 1.1;
     margin-bottom: 0.25rem;
 }
@@ -41,10 +49,9 @@ header p {
     margin-top: 0;
 }
 
-
 h2 {
     font-size: 1.75rem;
-    /*Class 12: Step 2: my own scale */
+    /* Class 12: Step 2: my own scale */
     line-height: 1.2;
     margin-top: 2.5rem;
     border-bottom: 1px solid var(--border);
@@ -55,10 +62,9 @@ h2 {
 p {
     font-size: 1.05rem;
     margin-bottom: 1rem;
-
 }
 
-/*Lab 12 Task 3: footer */
+/* Lab 12 Task 3: footer */
 /* Lab 14 * Task 4: footer stacks on narrow screens */
 footer {
     display: flex;
@@ -93,7 +99,6 @@ a:hover {
     border-radius: 50%;
 }
 
-
 section {
     margin-bottom: 3rem;
 }
@@ -110,9 +115,7 @@ li {
     border-left: 2px solid var(--accent);
 }
 
-
-/* Class 13: Step 3: the nav bar  */
-
+/* Class 13: Step 3: the nav bar */
 nav ul {
     list-style: none;
     padding-left: 0;
@@ -136,15 +139,14 @@ nav a {
     border-bottom: 2px solid transparent;
 }
 
-/* Lab 13 * Task 5:hover */
+/* Lab 13 * Task 5: hover */
 nav a:hover {
     background: var(--panel);
     border-bottom-color: var(--accent);
     padding-bottom: 1rem;
-
 }
 
-/* <!-- Lab 13 * Task 1: which page am I on --> */
+/* Lab 13 * Task 1: which page am I on */
 nav a.current {
     border-bottom-color: var(--accent);
     color: var(--accent);
@@ -154,13 +156,12 @@ nav a.current {
 nav {
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--border);
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
 }
 
-/* <!--Class 14 *Step 2: the cards go in a row--> */
+/* Class 14 * Step 2: the cards go in a row */
 .cards {
     display: flex;
-    gap: 1.5rem;
     flex-direction: column;
     gap: 1.5rem;
 }
@@ -172,17 +173,62 @@ nav {
     border-radius: 8px;
 }
 
-/* Class 14* Step 3: a row when theres room */
+/* Class 14 * Step 3: a row when there's room */
 @media (min-width: 40rem) {
     .cards {
         flex-direction: row;
     }
 }
 
-header {
-    min-height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/* Class 16: Step 3: the form */
+form label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
 }
 
+form input, form textarea {
+    font: inherit;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    scroll-padding-block-start: 6px;
+    background: var(--background);
+    color: var(--text);
+}
+
+form input:focus, form textarea:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+}
+
+form button {
+    font: inherit;
+    font-weight: 700;
+    color: var(--background);
+    background: var(--accent);
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.4rem;
+    cursor: pointer;
+}
+
+#form-status {
+    font-weight: 700;
+    color: var(--accent);
+}
+
+/* Lab 16  Task 1: the error state */
+#form-status.error {
+    color: var(--error);
+}
+
+body.dark {
+    --text: white;
+    --text-muted: silver;
+    --accent: skyblue;
+    --background: black;
+    --border: dimgray;
+    /* Lab 16  Task 1: Error color variable for dark mode */
+    --error: lightsalmon;
+}
