@@ -1,0 +1,10 @@
+## Week 11, Wednesday
+Live site: https://tahjewilson.netlify.app
+
+
+## Week 11, Wednesday Lab
+1. Github stores the repository, its like the base of operations, where the code is stored,
+    netlify displays what the code does.
+2. The live site does not change because 
+3. The padlock means that your site is working and secure
+4. Nope!

@@ -1,2 +1,5 @@
 ## Week 8, Friday
-On a phone, the text was too big. I fixed it by reducing the size of the text in stylwes.css
+On a phone, the text was too big. I fixed it by reducing the size of the text in styles.css
+
+## Week 11, Wednesday
+Live site: https://tahjewilson.netlify.app
