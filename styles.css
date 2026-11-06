@@ -232,3 +232,10 @@ body.dark {
     /* Lab 16  Task 1: Error color variable for dark mode */
     --error: lightsalmon;
 }
+
+
+
+/* Class 18: Step 2: the honeypot, hidden from people */
+.hidden-field{
+    display: none;
+}
