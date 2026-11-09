@@ -8,3 +8,20 @@ Live site: https://tahjewilson.netlify.app
 2. The live site does not change because 
 3. The padlock means that your site is working and secure
 4. Nope!
+
+
+##Lab 11 
+1. 2 seconds to first paint
+2. far enouch
+3. yes
+4. yes
+5. yes
+6.no
+
+##Week 11 Friday.
+1. the honey pot, it is used for dealing with bots
+2. a temporary url for a pull request
+3.
+4.it goes from development and then to release which conncets to the live site through netlify
+5. the domain uses a CNAME that acts like an alias and points towards our site
+6. more pages
