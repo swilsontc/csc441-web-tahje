@@ -187,7 +187,8 @@ form label {
     margin-bottom: 0.25rem;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     font: inherit;
     width: 100%;
     padding: 0.5rem;
@@ -197,7 +198,8 @@ form input, form textarea {
     color: var(--text);
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
     outline: 2px solid var(--accent);
     outline-offset: 1px;
 }
@@ -236,6 +238,6 @@ body.dark {
 
 
 /* Class 18: Step 2: the honeypot, hidden from people */
-.hidden-field{
+.hidden-field {
     display: none;
 }

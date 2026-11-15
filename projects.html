@@ -1,62 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Class 13 * Step 1: my second page -->
     <title>Projects - Tahje Wilson</title>
     <!-- Class 12: Step 1: a typeface I chose -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Class 13: Step 2: navigation -->
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html" class="current">Projects</a></li>
-            <!-- Class 16: Step 1: the contact link -->
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="reading.html">Reading</a></li>
-            <li><button id="theme-toggle" type="button">Dark</button></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="current">Projects</a></li>
+        <!-- Class 16: Step 1: the contact link -->
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reading.html">Reading</a></li>
+        <li><a href="interests.html">Interests</a></li>
+
+        <li><button id="theme-toggle" type="button">Dark</button></li>
+        <script src="script.js" defer></script>
+      </ul>
     </nav>
 
     <!-- Lab 12 Task 1: header side by side -->
     <header>
-        <img src="images/Tahje.jpg" alt="Portrait of Tahje Wilson" class="portrait">
-        <div class="header-text">
-            <h1>Projects</h1>
-            <p>Here are some of the projects I've worked on while at Le Moyne College</p>
-        </div>
+      <img
+        src="images/Tahje.jpg"
+        alt="Portrait of Tahje Wilson"
+        class="portrait"
+      />
+      <div class="header-text">
+        <h1>Projects</h1>
+        <p>
+          Here are some of the projects I've worked on while at Le Moyne College
+        </p>
+      </div>
     </header>
 
     <main>
-        <!-- Class 14 * Step 1: a row of cards -->
-        <div class="cards">
-            <section class="card">
-                <h2>Kotlin</h2>
-                <p>We learned how to read and write basic Kotlin. We worked on variables, control flow, functions, collections, null safety, and classes.</p>
-            </section>
-            <section class="card">
-                <h2>Android Studio</h2>
-                <p>We built, ran, and debugged a multi-screen Android application. The application accepts user input and responds to it.</p>
-            </section>
-            <section class="card">
-                <h2>Web Page</h2>
-                <p>We are currently on this and are working on building a website using HTML, CSS, and JavaScript.</p>
-            </section>
-        </div>
+      <!-- Class 14 * Step 1: a row of cards -->
+      <div class="cards">
+        <section class="card">
+          <h2>Kotlin</h2>
+          <p>
+            We learned how to read and write basic Kotlin. We worked on
+            variables, control flow, functions, collections, null safety, and
+            classes.
+          </p>
+        </section>
+        <section class="card">
+          <h2>Android Studio</h2>
+          <p>
+            We built, ran, and debugged a multi-screen Android application. The
+            application accepts user input and responds to it.
+          </p>
+        </section>
+        <section class="card">
+          <h2>Web Page</h2>
+          <p>
+            We are currently on this and are working on building a website using
+            HTML, CSS, and JavaScript.
+          </p>
+        </section>
+      </div>
     </main>
 
     <!-- Lab 12 Task 3: footer -->
     <footer>
-        <p>&copy; <span id="year"></span> Tahje Wilson</p>
-        <a href="https://github.com/swilsontc" target="_blank" rel="noopener">GitHub</a>
+      <p>&copy; <span id="year"></span> Tahje Wilson</p>
+      <a href="https://github.com/swilsontc" target="_blank" rel="noopener"
+        >GitHub</a
+      >
     </footer>
-</body>
+  </body>
 </html>
