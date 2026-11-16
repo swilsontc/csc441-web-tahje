@@ -1,2 +1,0 @@
-## Week 8, Friday
-On a phone, the text was too big. I fixed it by reducing the size of the text in styles.css
