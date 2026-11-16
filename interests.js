@@ -12,7 +12,7 @@ async function loadShowcase() {
         const response = await fetch(url, {
             headers: { "apikey": SHOWCASE_URL.key }
         });
-        if (!response.ok) throw new Eror("HTTPS" + response.status);
+        if (!response.ok) throw new Error("HTTPS" + response.status);
         const items = await response.json();
         for (const item of items) {
             const card = document.createElement("article");
@@ -24,11 +24,10 @@ async function loadShowcase() {
             const description = document.createElement("p");
             description.textContent = item.description;
             card.append(title, category, description);
-            showcaseGrid, append(card);
+            showcaseGrid.append(card);
         }
         showcaseStatus.textContent = items.length ? "Loded successfully" : "No items yet.";
         if (showcaseCount) showcaseCount.textContent = items.length + " items";
-        console.error("Showcase API error:", error);
 
     } catch (error) {
         showcaseStatus.textContent = "Failed to load items: " + error.message;
